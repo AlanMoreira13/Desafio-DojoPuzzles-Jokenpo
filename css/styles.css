@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+}
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 1%, rgba(252,70,107,1) 100%);
+}
+
+#titulo {
+    letter-spacing: .3em;
+    text-align: center;
+    margin: 10px auto 40px ;
+    font-size: 3em;
+    text-shadow: -3px 0 3px #fff;
+    box-shadow: 0 0 10px #FFF;
+    border-radius: 50px 5px 50px 5px;    
+}
+
+#container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container-principal #vs {
+    font-size: 7em;
+    font-style: italic;
+    text-shadow: 3px 0 5px #fff;
+}
+
+#container-jogador, #container-pc {
+    text-align: center;
+}
+#container-jogador h2, #container-pc h2{
+    margin: 0 0 10px 0;
+    font-size: 2em;
+}
+
+#jogador-escolha li a img, #pc-escolha li a img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+#pc-escolha li a {
+    cursor: none;
+}
+
+#jogador-escolha li a , #pc-escolha li a  {
+    opacity: .3;
+    transition: .3s;
+}
+#jogador-escolha li a:hover, #jogador-escolha li a.selecionado, #pc-escolha li a.selecionado{
+    opacity: 1;
+}
+
+
+
+#container-jogador #img-tesoura, #container-pc #img-tesoura {
+    width: 70px;
+    height: 100px;
+    margin: 10px 0 10px 15px;
+
+}
+
+#container-jogador, #container-pc {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-msg {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-shadow: -3px 0 3px #fff;
+    box-shadow: 0 0 10px #FFF;
+    border-radius: 50px 5px 50px 5px;   
+    letter-spacing: .2em; 
+}
+
+#jogador-pontos, #pc-pontos {
+    text-shadow: 2px 2px 2px #fff;
+}
+
+
+@media(max-width: 480px) {
+    #titulo {
+        margin: 20px 0 50px 0;
+        font-size: 3em;
+    }
+    #container-jogador h2, #container-pc h2{
+        margin: 50px 10px 40px 10px;
+        font-size: 2.2em;
+    }
+    #footer-msg {
+        margin: 100px 0 0 0;
+        text-align: center;
+    }
+    #footer-msg #msg{
+        font-size:1.4em ;
+    }
+    #container-jogador li {
+        width: 120px;
+    }
+    #container-principal #vs {
+        font-size: 6em;
+        margin-left: -43px;
+    }
+    
+}

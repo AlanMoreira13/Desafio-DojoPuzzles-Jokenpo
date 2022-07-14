@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Jokenpo</h1>
+    <div id="container-principal">
+      <div id="container-jogador">
+        <h2>Jogador: <span id="jogador-pontos">0</span></h2>
+        <ul id="jogador-escolha">
+            <li>
+                <a id="jogador-escolha-1" onclick="jogar(1)"><img src="assets/pedra.png" alt="pedra-jogador"  /></a>
+            </li>
+
+            <li><a id="jogador-escolha-2" onclick="jogar(2)"><img src="assets/papel.png" alt="papel-jogador"  /></a>
+            </li>
+
+            <li><a id="jogador-escolha-3" onclick="jogar(3)"><img id="img-tesoura" src="assets/tesour.png" alt="tesoura-jogador"  /></a>
+            </li>
+            </div>
+           
+        </ul>
+        
+      <h1 id="vs">VS</h1>
+      <div id="container-pc">
+        <h2>PC: <span id="pc-pontos">0</span></h2>
+        <ul id="pc-escolha">
+            <li><a id="pc-escolha-1" href=""><img src="assets/pedra.png" alt="pedra-pc" /></a>
+            </li>
+
+            <li><a id="pc-escolha-2" href=""><img src="assets/papel.png" alt="papel-pc" /></a>
+            </li>
+
+            <li><a id="pc-escolha-3" href=""><img id="img-tesoura" src="assets/tesour.png" alt="tesoura-pc" /></a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+      <div id="footer-msg">
+          <h2 id="msg">Escolha sua jogada!</h2>
+        </div>
+        
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
