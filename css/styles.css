@@ -50,9 +50,6 @@ body {
     
 }
 
-#pc-escolha li a {
-    cursor: none;
-}
 
 #jogador-escolha li a , #pc-escolha li a  {
     opacity: .3;
