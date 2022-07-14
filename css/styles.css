@@ -99,11 +99,11 @@ body {
         font-size: 3em;
     }
     #container-jogador h2, #container-pc h2{
-        margin: 50px 10px 40px 10px;
+        margin: 0 10px 40px 10px;
         font-size: 2.2em;
     }
     #footer-msg {
-        margin: 100px 0 0 0;
+        margin: 50px 0 0 0;
         text-align: center;
     }
     #footer-msg #msg{
